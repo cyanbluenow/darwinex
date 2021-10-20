@@ -1,0 +1,11 @@
+@import "../styles/variables.scss";
+.main-nav-bar-container {
+    height: 50px;
+    background-color: $nav-bg;
+    display:flex;
+    align-items:center;
+    .main-nav-brand-logo{
+        height:25px;
+        padding-left: 15px;
+    }
+}
