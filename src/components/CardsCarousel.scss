@@ -1,0 +1,10 @@
+@import "./../styles/variables.scss";
+
+.cards-carousel-big-container{
+	display: flex;
+	flex-direction: column;
+	.cards-carousel-menu-container{
+		height:50px;
+		background-color: $menu-bg;
+	}
+}
