@@ -1,0 +1,62 @@
+@import "../styles/variables.scss";
+
+.left-menu-big-container {
+    background-color: $dark-bg;
+    display: flex;
+    flex-direction: column;
+    width: 188px;
+    height: 95vh;
+
+    .left-menu-bottom-btn {
+        position: absolute;
+        bottom: 0;
+        width: 188px;
+    }
+
+    .left-menu-btns-principal {
+        height: 35px;
+        display: flex;
+        align-content: center;
+        padding-left: 2px;
+    }
+
+    .left-menu-btns {
+        height: 30px;
+        display: flex;
+        align-content: center;
+        padding-left: 15px;
+    }
+
+    .left-menu-btns-principal, .left-menu-btns {
+        .left-menu-link {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            align-items: center;
+
+            span {
+                padding-left: 14px;
+                color: $light-bg;
+                font-size: 10px;
+                font-family: 'Open Sans', sans-serif;
+                &:hover{color: $white;}
+            }
+        }
+    }
+
+    .grey-btn {
+        background-color: $medium-bg;
+    }
+
+    .blue-btn {
+        background-color: $main-blue;
+        .left-menu-link {
+            span {
+                color: $light-bg;
+                font-size: 12px;
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+        &:hover{background-color: $main-blue-hover;}
+    }
+}
