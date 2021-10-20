@@ -1,5 +1,5 @@
 import logo from "../resources/logo darwinex.svg";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
