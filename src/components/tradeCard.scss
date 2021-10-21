@@ -1,6 +1,137 @@
 @import "../styles/variables.scss";
-.trade-card-big-container{
+.trade-card-big-container {
+    display: flex;
+    flex-direction: column;
     background-color: $dark-bg;
     height: 372px;
-    flex:1;
+    flex: 1;
+    margin: 0 4px;
+
+    .trade-card-header-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .trade-card-header-element {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            align-items: center;
+
+            .trade-card-header-type {
+                color: $white;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 13px;
+                font-weight: 500;
+                padding-right: 4px;
+            }
+
+            .trade-card-header-position {
+                color: $medium-grey;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 13px;
+                font-weight: 500;
+
+            }
+
+            .trade-card-header-circle-color {
+                padding: 8px;
+            }
+
+            .trade-card-header-value {
+                color: $green;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 13px;
+                font-weight: 500;
+                padding-right: 6px;
+            }
+
+            .trade-card-header-btn-text {
+                color: $white;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            &:last-child {
+                justify-content: flex-end;
+                padding-right: 8px;
+            }
+        }
+    }
+
+    .trade-card-chart-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trade-card-folder-row-container {
+        display: flex;
+        flex-direction: row;
+
+        .trade-card-folder-element {
+            margin: 0;
+            flex: 1;
+
+            .trade-card-folder-circle {
+                padding-left: 8px;
+            }
+
+            .trade-card-folder-hexagon {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 8px;
+                position: relative;
+
+                span {
+                    position: absolute;
+                    right: 13px;
+                    font-family: 'Opens Sans', sans-serif;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .trade-card-data-rows-container {
+        display: flex;
+        flex-direction: column;
+
+        .trade-card-data-element-row {
+            display: flex;
+            flex-direction: row;
+            height: 49px;
+            border-bottom: solid 1px $light-grey;
+            margin: 0;
+
+            .trade-card-data-title {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                padding-left: 8px;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 13px;
+                color: $light-grey;
+            }
+
+            .trade-card-data-value {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 8px;
+            }
+
+            &:first-child {
+                height: 50px;
+                border-top: solid 1px $light-grey;
+            }
+
+            &:last-child {
+                border-bottom: none;
+                height: 48px;
+            }
+        }
+    }
 }

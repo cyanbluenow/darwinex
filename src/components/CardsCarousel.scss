@@ -1,10 +1,56 @@
 @import "./../styles/variables.scss";
 
-.cards-carousel-big-container{
+.cards-carousel-big-container {
 	display: flex;
 	flex-direction: column;
-	.cards-carousel-menu-container{
-		height:50px;
+
+	.cards-carousel-menu-container {
+		margin-left: 7px;
+		height: 50px;
 		background-color: $menu-bg;
+		margin-bottom: 24px;
+	}
+
+	.card-carousel-stats-container {
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 24px;
+
+		.card-carousel-stats-elements {
+			flex: 1;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			.card-carousel-stats-count {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 12px;
+				font-weight: bold;
+				color: $white;
+				padding-right: 4px;
+				padding-left: 7px;
+			}
+
+			.card-carousel-stats-text {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 12px;
+				font-weight: normal;
+				color: $white;
+			}
+
+			img {
+				padding-right: 8px;
+			}
+
+			&:last-child {
+				justify-content: flex-end;
+			}
+		}
+	}
+
+	.cards-carousel-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
 	}
 }
