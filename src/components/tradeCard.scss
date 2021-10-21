@@ -4,8 +4,9 @@
     flex-direction: column;
     background-color: $dark-bg;
     height: 372px;
+    max-width:268px;
     flex: 1;
-    margin: 0 4px;
+
 
     .trade-card-header-container {
         display: flex;
@@ -134,4 +135,5 @@
             }
         }
     }
+
 }
