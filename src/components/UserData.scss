@@ -1,0 +1,49 @@
+@import "./../styles/variables.scss";
+
+.user-data-big-container{
+    display:flex;
+    flex-direction: column;
+    padding-top:23px;
+    padding-bottom: 20px;
+
+    .user-data-user-container{
+        display:flex;
+        flex-direction:row;
+        .user-data-user{
+            display:flex;
+            flex-direction:column;
+            padding-left:14px;
+            span{
+                font-family: 'Opens Sans', sans-serif;
+                font-weight: normal;
+            }
+            .user-data-strategy{
+                color:$light-grey;
+                font-size: 12px;
+            }
+            .user-data-name{
+                color: $white;
+                font-size:13px;
+            }
+        }
+    }
+    .user-data-text-container{
+        display:flex;
+        flex-direction: row;
+        p{
+            flex:50%;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 13px;
+            font-weight:normal;
+            color: $white;
+
+        }
+        .user-data-arrow-icon{
+            display:flex;
+            justify-content:flex-start;
+            flex:50%;
+            height:9px;
+            padding-left: 13px;
+        }
+    }
+}
