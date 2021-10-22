@@ -5,7 +5,7 @@ function UserData() {
     return (
         <section className="user-data-big-container">
             <section className="user-data-user-container">
-                <div>
+                <div className="user-data-avatar">
                     <img src={avatar} className="" alt="icon" />
                     <span>AIS</span>
                 </div>
@@ -21,6 +21,7 @@ function UserData() {
                     <img src={downArrow}  alt="icon" />
                 </div>
             </section>
+            <section className="user-data-text-veil"></section>
         </section>
     );
 }

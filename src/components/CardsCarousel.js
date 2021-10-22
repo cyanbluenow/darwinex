@@ -3,7 +3,7 @@ import "./CardsCarousel.scss";
 import TradeCard from "./TradeCard";
 import listIcon from "./../resources/list-icon.svg";
 import cardIcon from "./../resources/card-icon.svg";
-import switchOn from "./../resources/switch.svg";
+import switchOn from "./../resources/switchOn.svg";
 import arrowDown from "./../resources/arrow-down.svg"
 import leftArrow from "./../resources/circle-left-arrow-icon.svg";
 import rightArrow from "./../resources/circle-right-arrow-icon.svg";
@@ -28,10 +28,12 @@ function CardsCarousel() {
                     </div>
                 </div>
                 <div className="cards-carousel-menu-dropdown">
-                    <div className="cards-carousel-menu-text">
-                        <span>Order by Return</span>
+                    <div className="cards-carousel-menu-dropdown-content">
+                        <div className="cards-carousel-menu-text">
+                            <span>Order by Return</span>
+                        </div>
+                        <img src={arrowDown} className="" alt="icon" />
                     </div>
-                    <img src={arrowDown} className="" alt="icon" />
                 </div>
             </section>
             <section className="card-carousel-stats-container">

@@ -3,6 +3,8 @@
 .cards-carousel-big-container {
 	display: flex;
 	flex-direction: column;
+	padding-top: 23px;
+	border-top: solid 1px $light-grey;
 
 	.cards-carousel-menu-container {
 		display: flex;
@@ -15,8 +17,9 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 50px;
-			height: 50px;
+			max-width: 50px;
+			max-height: 50px;
+			flex:1;
 		}
 
 		.cards-carousel-menu-switch {
@@ -53,13 +56,27 @@
 
 		.cards-carousel-menu-dropdown {
 			display: flex;
-			flex-direction: row;
-			justify-content: flex-end;
-			border-left: solid 1px $medium-grey;
-			padding-left: 22px;
+			justify-content:flex-end;
 			flex:1;
-			.cards-carousel-menu-text{
-				width:100px;
+			.cards-carousel-menu-dropdown-content {
+				display:flex;
+				flex-direction: row;
+				align-items:center;
+				padding: 0 22px;
+				border-left: solid 1px $medium-grey;
+				.cards-carousel-menu-text {
+					padding-right: 7px;
+					span{
+						font-family: 'Open Sans', sans-serif;
+						font-size: 13px;
+						color: $white;
+					}
+				}
+
+				img {
+					width: 7px;
+					height: 13px;
+				}
 			}
 		}
 	}

@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\src"
+    "\\src",
+    "\\src\\components",
+    "\\src\\mockup",
+    "\\src\\pages",
+    "\\src\\resources"
   ],
-  "SelectedNode": "\\public\\favicon.ico",
+  "SelectedNode": "\\src\\components\\UserData.js",
   "PreviewInSolutionExplorer": false
 }

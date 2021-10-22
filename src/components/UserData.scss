@@ -1,49 +1,80 @@
 @import "./../styles/variables.scss";
 
-.user-data-big-container{
-    display:flex;
+.user-data-big-container {
+    display: flex;
     flex-direction: column;
-    padding-top:23px;
-    padding-bottom: 20px;
+    padding-top: 23px;
+    margin-bottom: 20px;
+    position:relative;
 
-    .user-data-user-container{
-        display:flex;
-        flex-direction:row;
-        .user-data-user{
-            display:flex;
-            flex-direction:column;
-            padding-left:14px;
-            span{
+    .user-data-user-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-bottom: 13px;
+
+        .user-data-avatar {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            span {
+                position: absolute;
+                left: 25%;
+                color: $white;
+            }
+        }
+
+        .user-data-user {
+            display: flex;
+            flex-direction: column;
+            padding-left: 14px;
+
+            span {
                 font-family: 'Opens Sans', sans-serif;
                 font-weight: normal;
             }
-            .user-data-strategy{
-                color:$light-grey;
+
+            .user-data-strategy {
+                color: $light-grey;
                 font-size: 12px;
             }
-            .user-data-name{
+
+            .user-data-name {
                 color: $white;
-                font-size:13px;
+                font-size: 13px;
             }
         }
     }
-    .user-data-text-container{
-        display:flex;
+
+    .user-data-text-container {
+        display: flex;
         flex-direction: row;
-        p{
-            flex:50%;
+
+
+        p {
+            flex: 50%;
             font-family: 'Open Sans', sans-serif;
             font-size: 13px;
-            font-weight:normal;
+            font-weight: normal;
             color: $white;
-
         }
-        .user-data-arrow-icon{
-            display:flex;
-            justify-content:flex-start;
-            flex:50%;
-            height:9px;
+
+        .user-data-arrow-icon {
+            display: flex;
+            justify-content: flex-start;
+            flex: 50%;
+            height: 9px;
             padding-left: 13px;
         }
+    }
+
+    .user-data-text-veil {
+        height: 48px;
+        width: 100%;
+        background: linear-gradient(to top, rgba(32, 32, 32, 1), rgba(0, 0, 0, 0));
+        position:absolute;
+        z-index:1;
+        bottom:0;
     }
 }
