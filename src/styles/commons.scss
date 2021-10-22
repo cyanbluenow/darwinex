@@ -1,0 +1,8 @@
+@import "./variables.scss";
+span,p{
+    font-family: 'Open Sans', sans-serif;
+    color: $white;
+}
+
+.positiveNumber{color: $green;}
+.negativeNumber{color: $red;}

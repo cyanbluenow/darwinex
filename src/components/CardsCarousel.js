@@ -9,7 +9,32 @@ import leftArrow from "./../resources/circle-left-arrow-icon.svg";
 import rightArrow from "./../resources/circle-right-arrow-icon.svg";
 
 
+
 function CardsCarousel() {
+
+    function printCards()
+    {
+        if (data.length > 0) {
+            return data.map((item, i) => {
+                return(<TradeCard
+                    key={i}
+                    color={item.color}
+                    type={item.type}
+                    number={item.number}
+                    value={item.value}
+                    chart={item.chart}
+                    isActive={item.isActive}
+                    hexagon={item.hexagon}
+                    capitalInvertido={item.capitalInvertido}
+                    retorno={item.hexagon}
+                    drawdown={item.drawdown}
+                    score={item.score}
+                />
+                )
+            })
+        }
+    };
+
     return (
         <section className="cards-carousel-big-container">
             <section className="cards-carousel-menu-container">
@@ -47,9 +72,7 @@ function CardsCarousel() {
                 </div>
             </section>
             <section className="cards-carousel-container">
-                <TradeCard />
-                <TradeCard />
-                <TradeCard />
+                {printCards()}
             </section>
         </section>
     );
