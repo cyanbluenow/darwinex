@@ -10,3 +10,10 @@ span,p{
 
 .menuBtnActive{background-color: $dark-grey;}
 .menuBtnInactive{background-color: $menu-bg;}
+
+
+
+body{
+    min-width: 320px;
+    //@media(min-width: 320px)and (max-width){}
+}

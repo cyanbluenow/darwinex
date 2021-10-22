@@ -18,12 +18,28 @@ class CardsCarousel extends React.Component {
         super(props);
         this.state = {
             isListActive: false,
-            isCarouselActive: true
+            isCarouselActive: true,
+            dataParsed:[]
         }
-        //this.handleStatusChange = this.handleStatusChange.bind(this);
     }
 
-    componentDidMount() { }
+    componentDidMount() {
+        this.parseData();
+    }
+
+    parseData() {
+        let dimensions = window.innerWidth;
+        console.log("DIMENSIONS->" + dimensions)
+        let newArray = []
+        if (dimensions < 768) {
+            let rangeValue = 10;
+            for (let i = 0; i <= data.length; i += rangeValue) {
+                let selectedElements = data.slice(i, i + rangeValue);
+                newArray.push(selectedElements);
+            }
+        } 
+        console.log("parsedData", newArray)
+    }
 
     printSection() {
         if (this.state.isCarouselActive) {
