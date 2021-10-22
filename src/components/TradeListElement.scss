@@ -1,0 +1,13 @@
+@import "./../styles/variables.scss";
+
+.trade-list-element-big-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 48px;
+    border-bottom: solid 1px $light-grey;
+
+    &:first-child {
+        border-top: solid 1px $light-grey;
+    }
+}
